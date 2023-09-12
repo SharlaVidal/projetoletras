@@ -65,3 +65,28 @@ h1 {
 .tecla:active:focus {
   box-shadow: 3px 3px 0 var(--vermelha-escura) inset, 1px 1px 10px var(--luz);
 }
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; 
+  }
+
+  .teclado {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .tecla {
+    width: 80px; 
+    height: 80px;
+    font-size: 1.5em;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 18px; 
+  }
+}
+
+
